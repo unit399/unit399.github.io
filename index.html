@@ -1,0 +1,105 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>AgileMate</title>
+    <meta
+      name="description"
+      content="AgileMate is an offline-first pocket companion for Scrum Masters, Product Owners and agile coaches."
+    />
+    <style>
+      :root {
+        --bg: #f6f7f8;
+        --surface: #ffffff;
+        --border: #e2e5e9;
+        --text: #1b1f24;
+        --text-secondary: #5c6570;
+        --accent: #b93d0b;
+      }
+
+      @media (prefers-color-scheme: dark) {
+        :root {
+          --bg: #14181d;
+          --surface: #1d2229;
+          --border: #2e353e;
+          --text: #edeff2;
+          --text-secondary: #a6aeb8;
+          --accent: #ff6b2c;
+        }
+      }
+
+      * {
+        box-sizing: border-box;
+      }
+
+      body {
+        margin: 0;
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        padding: 2rem 1.25rem;
+        background: var(--bg);
+        color: var(--text);
+        font-family:
+          -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+        line-height: 1.6;
+        -webkit-text-size-adjust: 100%;
+      }
+
+      main {
+        max-width: 34rem;
+        width: 100%;
+      }
+
+      .wordmark {
+        font-size: 0.8rem;
+        letter-spacing: 0.14em;
+        text-transform: uppercase;
+        color: var(--accent);
+        font-weight: 600;
+        margin: 0 0 0.5rem;
+      }
+
+      h1 {
+        font-size: clamp(2rem, 7vw, 3rem);
+        line-height: 1.15;
+        margin: 0 0 1rem;
+      }
+
+      p {
+        color: var(--text-secondary);
+        font-size: 1.05rem;
+        margin: 0 0 2rem;
+      }
+
+      nav a {
+        display: inline-block;
+        padding: 0.7rem 1.4rem;
+        border: 1px solid var(--border);
+        border-radius: 999px;
+        background: var(--surface);
+        color: var(--accent);
+        text-decoration: none;
+        font-weight: 500;
+      }
+
+      nav a:hover,
+      nav a:focus-visible {
+        border-color: var(--accent);
+      }
+    </style>
+  </head>
+  <body>
+    <main>
+      <p class="wordmark">AgileMate</p>
+      <h1>The facilitator in your pocket.</h1>
+      <p>
+        An offline-first companion for the people who run agile ceremonies — Scrum Masters, Product
+        Owners, agile leaders and coaches. No accounts, no servers, no tracking.
+      </p>
+      <nav><a href="/privacy/">Privacy Policy</a></nav>
+    </main>
+  </body>
+</html>
